@@ -20,7 +20,7 @@ import lombok.AllArgsConstructor;
 @RequestMapping("/course")
 public class CourseController {
 
-    CourseService courseService;
+    private CourseService courseService;
 
     @GetMapping("/{id}")
     public ResponseEntity<Course> getCourse(@PathVariable Long id) {

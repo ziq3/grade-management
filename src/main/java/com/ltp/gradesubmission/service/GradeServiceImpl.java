@@ -19,9 +19,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class GradeServiceImpl implements GradeService {
     
-    GradeRepository gradeRepository;
-    StudentRepository studentRepository;
-    CourseRepository courseRepository;
+    private GradeRepository gradeRepository;
+    private StudentRepository studentRepository;
+    private CourseRepository courseRepository;
 
     
     @Override

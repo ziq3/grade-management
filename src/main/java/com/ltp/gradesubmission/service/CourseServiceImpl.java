@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CourseServiceImpl implements CourseService {
 
-    CourseRepository courseRepository;
+    private CourseRepository courseRepository;
     
     @Override
     public Course getCourse(Long id) {

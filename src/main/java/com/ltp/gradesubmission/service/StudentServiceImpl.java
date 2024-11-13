@@ -16,7 +16,7 @@ import lombok.AllArgsConstructor;
 public class StudentServiceImpl implements StudentService {
 
 
-    StudentRepository studentRepository;
+    private StudentRepository studentRepository;
 
     @Override
     public Student getStudent(Long id) {

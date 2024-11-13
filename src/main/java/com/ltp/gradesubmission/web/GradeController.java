@@ -23,7 +23,7 @@ import lombok.AllArgsConstructor;
 @RequestMapping("/grade")
 public class GradeController {
     
-    GradeService gradeService;
+    private GradeService gradeService;
 
     @GetMapping("/student/{studentId}/course/{courseId}")
     public ResponseEntity<Grade> getGrade(@PathVariable Long studentId, @PathVariable Long courseId) {

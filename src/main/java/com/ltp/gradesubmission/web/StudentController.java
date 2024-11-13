@@ -24,7 +24,7 @@ import lombok.AllArgsConstructor;
 public class StudentController {
 
     @Autowired
-    StudentService studentService;
+    private StudentService studentService;
     
     @GetMapping("/{id}")
     public ResponseEntity<Student> getStudent(@PathVariable Long id) {
